@@ -1,5 +1,5 @@
 import "./App.css";
-import IconBar3 from "./components/IconBar_vertical/IconBar3";
+import Accordion1 from "./components/Accordion/Accordion1";
 
 function App() {
   return (
@@ -7,7 +7,8 @@ function App() {
       <h1 className="text-3xl m-6 text-red-600 text-center">
         Practice w3 how to with Tailwind css
       </h1>
-      <IconBar3 />
+      {/* <IconBar3 /> */}
+      <Accordion1 />
     </>
   );
 }
