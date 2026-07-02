@@ -41,17 +41,17 @@ function Section({ value, children, onOpen, openValue }) {
         className={`w-full ${value === openValue && "bg-blue-500"} ${
           value === openValue ? "after:content-['-']" : "after:content-['+']"
         } after:float-right text-left
-       bg-gray-300 p-4 outline-none
-        hover:text-white hover:bg-blue-500 
-        border border-red-600
-        cursor-pointer`}
+       bg-gray-300 p-4  
+        hover:text-white hover:bg-blue-500 border-b-2 border-white
+       bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+        cursor-pointer rounded-md m-1`}
       >
         Section {value}
       </button>
       <div
-        className={`p-2 transition-all ease-in-out duration-1000 ${
+        className={`p-2  m-2 ${
           value === openValue ? "block" : "hidden"
-        } bg-orange-300 border border-red-600`}
+        } bg-gradient-to-r from-cyan-500 via-cyan-800 to-cyan-500 text-white text-justify`}
       >
         {children}
       </div>
